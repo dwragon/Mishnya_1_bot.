@@ -123,7 +123,7 @@ def main():
     
     url_path=TOKEN)
     
-    updater.bot.setWebhook('https://адрес приложения из heroku.herokuapp.com/' + TOKEN)
+    updater.bot.setWebhook('https://appforlab.herokuapp.com/' + TOKEN)
     
     
 
