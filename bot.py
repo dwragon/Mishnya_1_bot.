@@ -26,7 +26,7 @@ def error(update, context):
     logger.warning('Update "%s" caused error "%s"', update, context.error)
 
 def echo(update, context):
-        """Echo the user message."""
+    """Echo the user message."""
     update.message.reply_text(update.message.text)
 
 def main():
@@ -39,7 +39,7 @@ def main():
     dp.add_handler(MessageHandler(Filters.text, echo))
    # log all errors
     dp.add_error_handler(error)
-         # Start the Bot
+    # Start the Bot
     updater.start_webhook(listen="0.0.0.0",port=int(PORT),url_path=TOKEN)
     updater.bot.setWebhook('https://appforlab.herokuapp.com/' + TOKEN)
     updater.idle()
