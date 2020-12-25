@@ -38,7 +38,7 @@ TOKEN = '1474388780:AAG4NEQIO-5BII6OHpSLKQqJEkyPzZ1n8bo'
 
 
 
-def start(update, context):
+    def start(update, context):
 
     """Send a message when the command /start is issued."""
 
@@ -46,7 +46,7 @@ def start(update, context):
 
 
 
-def help(update, context):
+    def help(update, context):
 
     """Send a message when the command /help is issued."""
 
@@ -57,7 +57,7 @@ def help(update, context):
 
 
 
-def echo(update, context):
+    def echo(update, context):
 
     """Echo the user message."""
 
@@ -65,7 +65,7 @@ def echo(update, context):
 
 
 
-def error(update, context):
+    def error(update, context):
 
     """Log Errors caused by Updates."""
 
@@ -75,7 +75,7 @@ def error(update, context):
 
 
 
-def echo(update, context):
+    def echo(update, context):
 
     """Echo the user message."""
 
@@ -83,7 +83,7 @@ def echo(update, context):
 
 
 
-def main():
+    def main():
 
 
     updater = Updater(TOKEN, use_context=True)
